@@ -1,4 +1,3 @@
-import "./1.css";
 var burger = document.querySelector('.burger');
 var navMenu = document.querySelector('.nav-links');
 var burgerLine = document.querySelectorAll('.burger > div');
@@ -14,3 +13,8 @@ burger.addEventListener('click',function(){
         }else navMenuItem.style.animation = '';
     });
 })
+
+var img = document.querySelectorAll('.item__img > img');
+img[0].onclick = function(){
+    location.reload();
+}
