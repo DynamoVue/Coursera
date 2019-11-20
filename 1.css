@@ -14,6 +14,7 @@ body {
     /* width:90%; */
     margin: 0 auto;
     padding:20px 0px;
+    transition: .4s all;
 }
 .page-header > nav > .logo-container {
     display: flex;
@@ -23,9 +24,10 @@ body {
     justify-content: center;
 }
 .logo-container > h4 {
-    font-family: segoe ui light;
-    font-size:18px;
+    font-family: segoe ui;
+    font-size:24px;
     margin-bottom: 0px;
+    font-family: 'Dancing Script', cursive;
 }
 .logo-container > img {
     margin-right:10px;
@@ -227,6 +229,119 @@ body {
     padding:200px 0px;
 }
 
+
+
+.page-offer {
+    background-position: 100px 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.page-offer > .container-fluid > .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.page-offer > .container-fluid > .row > h3 {
+    color: white;
+    font-family: segoe ui light;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+.page-offer > .container-fluid > .row > span {
+    color: rgba(255,255,255,0.6);
+    font-size:18px;
+    font-family:'Poppins', sans-serif;
+    font-weight: 100;
+    margin-top: 15px;
+    word-spacing: 2px;
+}
+.page-offer > .container-fluid > .row > a {
+    padding: 10px 20px;
+    border: 1px solid rgba(255,255,255,0.6);
+    font-family: segoe ui light;
+    color: rgba(255,255,255,0.7);
+    background-color: rgba(0,0,0,1);
+    margin-top: 20px;
+    transition: .4s all;
+}
+.page-offer > .container-fluid > .row > a:hover {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+.page-aboutUs  .page-aboutUs-profile > .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-aboutUs-profile__infor__img > img {
+    width: 100%;
+}
+.page-aboutUs-profile__infor__img {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-aboutUs-profile__infor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+}
+.page-aboutUs {
+    margin-top:40px;
+}
+.page-aboutUs > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.page-aboutUs-profile__infor > h2 {
+    margin: 20px 0px;
+    font-family:'Poppins', sans-serif;
+}
+footer {
+    background-color: rgba(0,0,0,0.9);
+    margin-top: 60px;
+    padding: 40px 0px;
+}
+.page-footer__address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.page-footer__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+}
+.page-footer__contact > ul > li {
+    padding: 30px 0px;
+    font-family: segoe ui light;
+}
+.item__name {
+    margin: 30px 0px;
+}
+.page-footer__address__intro > h3 {
+    margin: 20px 0px;
+    letter-spacing: .2rem;
+}
+.page-footer__intro {
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+    font-weight: 100;
+    letter-spacing: .2rem;
+}
 @media only screen and (max-width:576px){
     .nav-links {
         width:100vw !important;
@@ -246,6 +361,19 @@ body {
         height: 1px;
         background-color: black;
         transform: translateX(-50%);
+    }
+    .page-footer__address__map {
+        width: 100%;
+        text-align: center;
+    }
+    .page-footer__address__map > iframe {
+        width: 90%;
+    }
+    .page-footer__contact{
+        margin: 30px 0px;
+    }
+    .page-offer {
+        background-position: -110% 50%;
     }
 }
 @media only screen and (max-width:992px){
@@ -336,79 +464,55 @@ body {
         margin-top:10px;
     }
 }
-.page-offer {
-    background-position: 100px 50%;
-    background-size: cover;
+@media only screen and (min-width:768px) {
+    .fixed-menu {
+        position: fixed;
+        width: 100%;
+        animation: slide-in .4s forwards ease-in;
+        z-index: 999999;
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+    }
+    .fixed-menu > nav  > .logo-container > h4 {
+        color: white;
+    }
+    .fixed-menu > nav > .nav-links > .nav-link > a {
+        color: white;
+    }
+    @-webkit-keyframes slide-in {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
 }
-.page-offer > .container-fluid > .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.page-offer > .container-fluid > .row > h3 {
-    color: white;
-    font-family: segoe ui light;
-    letter-spacing: 5px;
-    font-size: 30px;
-}
-.page-offer > .container-fluid > .row > span {
-    color: rgba(255,255,255,0.6);
-    font-size:18px;
-    font-family:'Poppins', sans-serif;
-    font-weight: 100;
-    margin-top: 15px;
-    word-spacing: 2px;
-}
-.page-offer > .container-fluid > .row > a {
-    padding: 10px 20px;
-    border: 1px solid rgba(255,255,255,0.6);
-    font-family: segoe ui light;
-    color: rgba(255,255,255,0.7);
-    background-color: rgba(0,0,0,1);
-    margin-top: 20px;
+.page-backToTop {
+    position: fixed;
+    bottom : 30px;
+    left:30px;
+    border: 1px solid lightblue;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: lightblue;
     transition: .4s all;
+    visibility: hidden;
 }
-.page-offer > .container-fluid > .row > a:hover {
-    text-decoration: none;
-    background-color: white;
-    color: black;
-}
-.page-aboutUs  .page-aboutUs-profile > .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.page-backToTop:hover {
+    background-color: #96bac5;
 }
 
-.page-aboutUs-profile__infor__img > img {
-    width: 100%;
+.active {
+    visibility: visible;
+    animation: slide-right .4s forwards ease-in;
 }
-.page-aboutUs-profile__infor__img {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.page-aboutUs-profile__infor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 350px;
-}
-.page-aboutUs {
-    margin-top:40px;
-}
-.page-aboutUs > .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.page-aboutUs-profile__infor > h2 {
-    margin: 20px 0px;
-    font-family:'Poppins', sans-serif;
-}
-.page-footer__address {
-    
+@-webkit-keyframes slide-right {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
